@@ -3,7 +3,7 @@ ENV PYTHONUNBUFFERED 1
 
 RUN \
   apt-get -y update && \
-  apt-get install -y gettext && \
+  apt-get install -y vim wget gettext && \
   apt-get clean
 
 ADD requirements.txt /app/
